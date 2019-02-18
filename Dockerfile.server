@@ -6,7 +6,6 @@ RUN mkdir -p /usr/local/go/src/github.com/tenorbear/grpc-go-loadtest/helloworld
 Add ./server /usr/local/go/src/github.com/tenorbear/grpc-go-loadtest/server
 Add ./helloworld /usr/local/go/src/github.com/tenorbear/grpc-go-loadtest/helloworld
 
-#RUN go get golang.org/x/net/context
 WORKDIR /usr/local/go/src/github.com/tenorbear/grpc-go-loadtest/server
 
 RUN go get -d -v ./...
