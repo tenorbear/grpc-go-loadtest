@@ -1,0 +1,7 @@
+FROM golang:latest
+
+WORKDIR /usr/local/go/bin
+
+RUN go get -u github.com/tenorbear/grpc-go-loadtest/server
+
+CMD ["server"]
