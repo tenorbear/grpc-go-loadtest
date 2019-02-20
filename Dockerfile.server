@@ -12,8 +12,6 @@ RUN go get -d -v ./...
 
 RUN go build
 
-RUN ls
-
 EXPOSE 50051
 
 ENTRYPOINT ["./server"]

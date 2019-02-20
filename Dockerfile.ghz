@@ -1,0 +1,13 @@
+# Wrap the GHZ tool into a docker container.
+# This repo doesn't own the GHZ tool, but merely a reference when the ghz docker is absent.
+# See more in: github.com/bojand/ghz/cmd/ghz
+
+FROM golang:1.11
+
+RUN go get -v github.com/bojand/ghz/cmd/ghz
+
+WORKDIR /go/bin
+
+RUN ls
+
+ENTRYPOINT ["./ghz"]
